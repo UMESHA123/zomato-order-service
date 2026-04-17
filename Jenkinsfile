@@ -5,6 +5,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven-3.9'
+    }
+
     environment {
         SERVICE_NAME    = 'order-service'
         REPO_NAME       = 'zomato-order-service'
